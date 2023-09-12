@@ -2,7 +2,6 @@ import { UserAuth } from "../context/AuthContext";
 
 const Message = ({ message }) => {
   const { currentUser } = UserAuth();
-  console.log(message?.createdAt?.seconds)
   let timestamp = message?.createdAt?.seconds + (message?.createdAt?.nanoseconds) * 10**-9;
   let date = new Date(timestamp * 1000);
   let dateFormat = date.toDateString().substring(4)  + ", "+ date.getHours() + ":" + date.getMinutes();
