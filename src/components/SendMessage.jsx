@@ -32,7 +32,7 @@ const SendMessage = () => {
 
   return (
     <div className="bg-slate-950 relative bottom-0 w-full shadow-lg">
-      <form onSubmit={handleSendMessage} className="px-2 containerWrap flex">
+      <form onSubmit={handleSendMessage} className="px-2 containerWrap flex pb-5">
         <input placeholder="Write something..." value={value} onChange={e => setValue(e.target.value)} className="input w-full focus:outline-none bg-gray-100 rounded-full" type="text" />
         {value && <button type="submit" className="btn btn-primary w-auto bg-violet-600 text-white rounded-l-full rounded-r-full ml-2 px-5 text-sm">🕊️</button>}
       </form>
